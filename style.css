@@ -1,0 +1,182 @@
+/* reset all css */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#nav{
+    display: flex;
+    height: 90px;
+    align-items: center;
+    position: relative;
+}
+#nav::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .56;
+}
+#logo{
+    padding: 2px 10px;
+    font-size: 1.7rem;
+    color: white;
+}
+#menu ul{
+    display: flex;
+    list-style-type: none;
+}
+#menu ul li a{
+    padding: 8px 18px;
+    margin: 3px 10px;
+    font-size: 1.3rem;
+    color: white;
+}
+#menu ul li a:hover{
+    background-color: rgb(253, 252, 252);
+    border-radius: 20px;
+    color: black;
+}
+/* HOME SECTION */
+#home::before{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(img/home.jpg);
+    content: "";
+    background-position: center;
+    background-size: cover;
+    height: 130vh;
+    width: 100%;
+    position: absolute;
+    opacity: .78;
+    z-index: -1;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 493px;
+    margin-bottom: 37px;
+    color: white;
+    
+}
+#home h1{
+    font-size: 5rem;
+    color: white(53, 52, 139);
+
+}
+#home2{
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.homeh3{
+    font-size: 2rem
+}
+#btn button{
+    font-size:1.2rem;
+    padding: 5px 10px;
+    margin: 15px 0px;
+}
+/* featured
+ */
+ #featured h1{
+     margin-left: 40%;
+     font-size: 3rem;
+     padding-bottom: 40px;
+     padding-top: 30px;
+     text-shadow: 3px 4px 5px red,4px 5px 3px blue;
+ }
+ #featured #f-all #f-all-div{
+     height: 300px;
+     width: 300px;
+     margin-bottom: 150px;
+ }    
+ #featured #f-all{
+         display:flex;
+         justify-content:space-around;
+         flex-wrap: wrap;
+         margin: 0px 100px;
+        
+ }
+ /* #featured #f-all:hover{
+    transition: margin-right 2s ease-in-out .5s;
+ } */
+ #featured #f-all #f-all-div img{
+    height: 100%;
+    width: 100%;
+    /* transition: height 2s , width 4s; */
+    border-radius: 15px;
+}
+#featured #f-all #f-all-div img:hover{
+    height: 250px;
+    width: 250px;
+    transition: all 1s ease-in-out;
+}
+#featured #f-all #f-all-div p span {
+    color: brown;
+    margin-right: 20px;
+}
+/* #featured #f-all #f-all-div:hover{
+    width: 300px;
+    height: 300px;
+    transition: height 2s , width 4s;
+} */
+#lim::before{
+    content: "";
+    background:  url(img/11.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: .89;
+    z-index: -1;
+}
+#lim{
+    height: 100vh;
+    width: 100%;
+}
+#lim #limited{
+     position: absolute;
+     margin-top: 10%;
+     height: 35%;
+     width: 50%;
+     margin-left: 10%;
+     line-height: 2rem;
+}
+#lim #limited h2{
+    font-size: 2rem;
+    padding-top: 20px;
+    color: white;
+}
+#lim #limited h1{
+    font-size: 4rem;
+    padding: 30px 0px;
+    color: white;
+}
+#lim #limited p{
+    font-size: 1rem;
+    color: white;
+}
+#lim #limited button{
+    font-size: 2rem;
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin-top: 20px;
+   
+}
+footer div{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(141, 139, 139);
+    justify-content: space-around;
+}
+footer div div{
+    height: 150px;
+    width:270px;
+    flex-direction: column;
+    margin-top: 90px;
+}
